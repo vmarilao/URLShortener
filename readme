@@ -1,6 +1,9 @@
 This is a repository for URL shortening project.  
 
-The project was implemented using Python3 with Flask web framework.  It is primarily designed using a dictionary as an in-memory data container to hold a named-value pair object
-collection list.  A couple of REST API was also implemented to support the shortening and unshortening methods. Unittest has been created for local testing.
+The project was implemented using Python3 with Flask web framework.  It is primarily designed using a dictionary as an in-memory data container to hold a named-value pair objects collection list.  A couple of REST API was also implemented to support the shortening and unshortening methods. Unittest has been created for local testing.
 
-Future enhnacements to the project include unit test for the  
+Future enhnacements to the project include unit test for the REST API, and backend datastore using a relational (MySQL) and/or NoSQL (MongoDB).
+
+The app can be invoke either directly calling the API or involking the unittest class
+python3 -m URLShortener.app.CustomUrlShortener
+python3 -m URLShortener.tests.TestCustomUrlShortener
